@@ -4,13 +4,15 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './index.scss';
 
-import App from './App';
+import Navigation from './components/Navigation';
 import ThemeContext from './utility/context/ThemeContext';
+import App from './App';
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
             <ThemeContext>
+                <Navigation />
                 <App />
             </ThemeContext>
         </BrowserRouter>

@@ -5,7 +5,6 @@ import './style.scss';
 const ThemeContext = (props) => {
     return (
         <div className="theme-context">
-            <Navigation />
             {props.children}
         </div>
     );

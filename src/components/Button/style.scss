@@ -1,0 +1,14 @@
+@import '../../styles/scss/variables.scss';
+
+.wrap-button {
+    .button {
+        min-height: 53px;
+        padding: 12px 24px;
+        background-color: $color-flickr-pink;
+        border: 1px solid $color-trypan-blue;
+        border-radius: 0.75rem;
+        color: $color-white;
+        text-decoration: none;
+        font-weight: 700;
+    }
+}
