@@ -1,10 +1,12 @@
 import React from 'react';
-import "./style.scss"
+import './style.scss';
 
 const Button = (props) => {
     return (
         <div className="wrap-button">
-            <button className="button">{props.children}</button>
+            <button className="button" onClick={props.customClickEvent}>
+                {props.children}
+            </button>
         </div>
     );
 };
