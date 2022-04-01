@@ -1,0 +1,15 @@
+@import '../../styles/scss/variables.scss';
+
+.wrap-input {
+    .input {
+        min-height: 53px;
+        padding: 12px 24px;
+        background-color: $color-white;
+        border: 2px solid $color-flickr-pink;
+        border-radius: 0.75rem;
+        font-size: 18px;
+        font-weight: 700;
+        color: $color-black;
+        outline-color: $color-persian-blue;
+    }
+}

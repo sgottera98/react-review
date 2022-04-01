@@ -1,4 +1,9 @@
+
 import React, { useEffect, useState } from 'react';
+import Button from '../../components/Button';
+import Dropdown from '../../components/Dropdown';
+import Option from '../../components/Dropdown/option';
+import Input from '../../components/Input';
 import getCurrency from '../../services/currencies';
 
 const Currencies = (props) => {
@@ -7,12 +12,10 @@ const Currencies = (props) => {
     useEffect(() => {
         getCurrency()
             .then((res) => {
-                setCurrency(res.USDBRL);
+                setCurrency(res);
             })
             .catch((err) => console.log(err));
     }, []);
-
-    console.log(currency.ask);
 
     return (
         <>
@@ -31,6 +34,12 @@ const Currencies = (props) => {
                 </p>
                 <p className='text-4xl'>{currency.ask}</p>
             </span>
+            <br />
+            <Dropdown>
+                <Option>teste 1</Option>
+                <Option>teste 1</Option>
+                <Option>teste 1</Option>
+            </Dropdown>
         </>
     );
 };

@@ -40,9 +40,9 @@ const Slip = (props) => {
                         "{phrase}" 🤙
                     </p>
                     <div className="flex justify-center gap-2 mt-10">
-                        <Button customClickEvent={decrementId}>Prev</Button>
-                        <Button customClickEvent={randomId}>Random</Button>
-                        <Button customClickEvent={incrementId}>Next</Button>
+                        <Button buttonCustomEvent={decrementId}>Prev</Button>
+                        <Button buttonCustomEvent={randomId}>Random</Button>
+                        <Button buttonCustomEvent={incrementId}>Next</Button>
                     </div>
                 </>
             )}
