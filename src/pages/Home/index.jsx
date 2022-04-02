@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../../components/Button'
 
 const Home = () => {
     return (
@@ -8,7 +9,7 @@ const Home = () => {
                 to="/login"
                 className="text-white font-bold text-center text-4xl"
             >
-                ir para Login
+                <Button>Ir para login</Button>
             </Link>
         </>
     );

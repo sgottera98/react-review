@@ -1,6 +1,9 @@
 @import '../../styles/scss/variables.scss';
 
 .wrap-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .button {
         min-height: 53px;
         padding: 12px 24px;
