@@ -3,7 +3,7 @@ import './style.scss';
 
 const Option = (props) => {
     return (
-        <option className="option" value="">
+        <option className="option" value={props.value}>
             {props.children}
         </option>
     );

@@ -1,6 +1,7 @@
 @import '../../../styles/scss/variables.scss';
 
 .theme-context {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background: no-repeat, linear-gradient(45deg, $color-byzantine, $color-purple, $color-persian-blue, $color-dodger-blue);
 }
